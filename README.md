@@ -1,1 +1,3 @@
 # Action_Drone_Project
+
+This project uses Action which is an asynchronous call to the functionality of another node (It is Asynchronous because the program can continue doing other things while the result is pending unlike Services). The simulated environment uses a drone which takes off when the goal is assigned by typing this code on the terminal; "rostopic pub /move_drone_square_as/goal /actionlib/TestActionGoal and inputing the "goal" on the terminal. The Action client when launched takes the goal,publish feedback and moves the drone in squares until the goal elapses then the drone lands on the ground.
